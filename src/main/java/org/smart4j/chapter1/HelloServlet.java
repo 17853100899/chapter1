@@ -17,6 +17,7 @@ public class HelloServlet extends HttpServlet {
     //git remote add origin git@github.com:17853100899/chapter1.git(此处为你自己远程仓库的key)
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println("收到请求。");
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String currentTime = dateFormat.format(new Date());
         request.setAttribute("currentTime", currentTime);
