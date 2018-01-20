@@ -13,8 +13,6 @@ import java.util.Date;
 @WebServlet("/hello")
 public class HelloServlet extends HttpServlet {
 
-    //git@github.com:17853100899/chapter1.git
-    //git remote add origin git@github.com:17853100899/chapter1.git(此处为你自己远程仓库的key)
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("收到请求。");
